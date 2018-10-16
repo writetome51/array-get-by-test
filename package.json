@@ -1,0 +1,24 @@
+{
+  "name": "@writetome51/array-get-filtered-results",
+  "version": "1.0.0",
+  "description": "A more intuitive name for Array.filter()",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+    "manipulation",
+    "filter",
+    "return",
+    "results"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "devDependencies": {
+    "@writetome51/arrays-match": "latest"
+  },
+  "dependencies": {
+    "basic-data-handling": "latest"
+  }
+}
