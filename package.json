@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-filtered-results",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A more intuitive name for Array.filter()",
   "main": "index.js",
   "scripts": {

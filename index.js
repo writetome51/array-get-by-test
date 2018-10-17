@@ -1,3 +1,3 @@
 var getFilteredResults = require('./lib/getFilteredResults');
 
-exports.getFilteredResults = getFilteredResults;
+module.exports = getFilteredResults;
