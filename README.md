@@ -1,10 +1,13 @@
-getFilteredResults(testFunction, array);
-
-Similar to Array.filter(), except it returns array of objects.
-Each object contains both the value that matched the testFunction and its index.
-Each object matches this interface:   {value: any,  index: integer}
+getFilteredResults(testFunction, array): IValueIndexPair[]
 
 testFunction = function(currentValue, currentIndex?, array?) : return boolean
+
+getFilteredResults is almost exactly like Array.filter(), except it returns array of 
+IValueIndexPairs.  
+A  IValueIndexPair is this object:   {value: any,  index: integer}  
+It contains both the value filtered by the testFunction and its index.
+
+
 
 Example:
 
