@@ -1,7 +1,7 @@
 {
   "name": "@writetome51/array-get-filtered-results",
-  "version": "2.0.0",
-  "description": "A more intuitive name for Array.filter()",
+  "version": "2.0.1",
+  "description": "Similar to Array.filter(), except it returns array of objects representing each filtered item",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
     "@writetome51/arrays-match": "latest"
   },
   "dependencies": {
-    "basic-data-handling": "latest"
+    "basic-data-handling": "latest",
+    "value-index-pair-interface": "latest"
   }
 }
