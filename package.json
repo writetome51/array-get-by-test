@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-filtered-results",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Similar to Array.filter(), except it returns array of objects representing each filtered item",
   "main": "index.js",
   "scripts": {
@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/writetome51/array-get-filtered-results#readme",
   "devDependencies": {
-    "@writetome51/arrays-match": "latest"
+    "@writetome51/arrays-match": "~1.0.4"
   },
   "dependencies": {
-    "basic-data-handling": "latest",
-    "value-index-pair-interface": "latest"
+    "basic-data-handling": "~1.0.13",
+    "value-index-pair-interface": "~1.0.1"
   }
 }
