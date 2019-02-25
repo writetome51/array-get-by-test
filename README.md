@@ -35,5 +35,8 @@ results is
 
 ## Loading
 ```
-
+// if using TypeScript:
+import {getByTest} from '@writetome51/array-get-by-test';
+// if using ES5 JavaScript:
+var getByTest = require('@writetome51/array-get-by-test').getByTest;
 ```
