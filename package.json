@@ -1,14 +1,15 @@
 {
-  "name": "@writetome51/array-get-filtered-results",
-  "version": "2.0.2",
+  "name": "@writetome51/array-get-by-test",
+  "version": "1.0.0",
   "description": "Similar to Array.filter(), except it returns array of objects representing each filtered item",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/writetome51/array-get-filtered-results.git"
+    "url": "git+https://github.com/writetome51/array-get-by-test.git"
   },
   "keywords": [
     "array",
@@ -20,14 +21,14 @@
   "author": "Steve Thompson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/writetome51/array-get-filtered-results/issues"
+    "url": "https://github.com/writetome51/array-get-by-test/issues"
   },
-  "homepage": "https://github.com/writetome51/array-get-filtered-results#readme",
+  "homepage": "https://github.com/writetome51/array-get-by-test#readme",
   "devDependencies": {
-    "@writetome51/arrays-match": "~1.0.4"
+    "@writetome51/arrays-match": "~1.0.5"
   },
   "dependencies": {
-    "basic-data-handling": "~1.0.13",
+    "basic-data-handling": "~1.0.15",
     "value-index-pair-interface": "~1.0.1"
   }
 }
