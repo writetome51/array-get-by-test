@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-by-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Similar to Array.filter(), except it returns array of objects representing each filtered item",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,7 +28,8 @@
     "@writetome51/arrays-match": "~1.0.5"
   },
   "dependencies": {
-    "basic-data-handling": "~1.0.15",
+    "error-if-not-array": "~1.0.0",
+    "error-if-not-function": "~1.0.0",
     "value-index-pair-interface": "~1.0.1"
   }
 }

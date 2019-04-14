@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var arrays_match_1 = require("@writetome51/arrays-match");
 var index_1 = require("./index");
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// Test 1: test function returns every item greater than or equal to 5, and array should
+// Test 1: test function returns every item greater than or equal to 9, and array should
 // not be modified:
 var result = index_1.getByTest(function (item) { return item >= 9; }, arr);
 if (result.length === 2 && typeof result[0] === 'object' && typeof result[1] === 'object' &&
@@ -19,6 +19,14 @@ if (result.length === 1 && typeof result[0] === 'object' && result[0]['value'] =
     console.log('test 2 passed');
 else
     console.log('test 2 failed.');
+// Test 2A:
+arr = [1, 2, 3, 4, 1, 2, 3, 4];
+result = index_1.getByTest(function (item, index, __arr) { return (item === 4 && (__arr[index + 1] === 1)); }, arr);
+if (result.length === 1 && typeof result[0] === 'object' && result[0]['value'] === 4 &&
+    result[0]['index'] === 3 && arrays_match_1.arraysMatch(arr, [1, 2, 3, 4, 1, 2, 3, 4]))
+    console.log('test 2A passed');
+else
+    console.log('test 2A failed.');
 // Test 3
 var errorTriggered = false;
 try {

@@ -1,5 +1,5 @@
-import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
-import { errorIfNotFunction } from 'basic-data-handling/errorIfNotFunction';
+import { errorIfNotArray } from 'error-if-not-array';
+import { errorIfNotFunction } from 'error-if-not-function';
 import { IValueIndexPair } from 'value-index-pair-interface/IValueIndexPair';
 
 
