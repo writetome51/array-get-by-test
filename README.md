@@ -1,22 +1,17 @@
-# getByTest(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testFunction,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): IValueIndexPair[]
+# getByTest(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testFn: (value, index?, array?) => boolean,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): {value: any,  index: number}[]
 
-`testFunction = function(currentValue, currentIndex?, array?) : boolean`
-
-`getByTest()` is almost exactly like `Array.filter()`, except it returns array of 
-IValueIndexPairs.  
-A  IValueIndexPair is this object:  `{value: any,  index: integer}`  
-It's both an item filtered by `testFunction` and its index.
+`getByTest()` is almost exactly like `Array.filter()`, except it returns array of these objects:  
+ `{value: any,  index: integer}`
 
 
 ## Examples
-```
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let results = getByTest((item) => item > 8, arr);
+```js
+let arr = ['a', 'bb', 'c', 'dd', 'e', 'ff'];
+getByTest((value) => value.length > 1, arr);
+// -->  [{value:'bb', index:1}, {value:'dd', index:3}, {value:'ff', index:5}]
 
-// results is [{value:9, index:8}, {value:10, index:9}]
 
-
-let arr = [50, -10, 100, -20, 1000, -100];
+arr = [50, -10, 100, -20, 1000, -100];
 let results = getByTest((item) => item < 0, arr);
 
 /*************** 
@@ -34,9 +29,6 @@ results is
 `npm i  @writetome51/array-get-by-test`
 
 ## Loading
-```
-// if using TypeScript:
+```ts
 import {getByTest} from '@writetome51/array-get-by-test';
-// if using ES5 JavaScript:
-var getByTest = require('@writetome51/array-get-by-test').getByTest;
 ```
