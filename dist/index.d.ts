@@ -1,4 +1,4 @@
 export declare function getByTest(
-	testFunction: (value: any, index?: number, array?: any[]) => boolean,
+	test: (value: any, index?: number, array?: any[]) => boolean,
 	array: any[]
-): { value: any; index: number; }[];
+): Array<{ value: any, index: number }>;

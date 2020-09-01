@@ -1,4 +1,4 @@
-# getByTest(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testFn: (value, index?, array?) => boolean,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): {value: any,  index: number}[]
+# getByTest(<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;testFn: (value, index?, array?) => boolean,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array<br>): Array<{ value: any, index: number }>
 
 `getByTest()` is almost exactly like `Array.filter()`, except it returns array of these objects:  
  `{value: any,  index: integer}`
