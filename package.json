@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-get-by-test",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Similar to Array.prototype.filter(), except it lets you customize what value to get from the element that passes test",
   "type": "module",
   "main": "index.js",
