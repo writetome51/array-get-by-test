@@ -1,5 +1,5 @@
-export declare function getByTest(
-	test: (value: any, index?: number, array?: any[]) => boolean,
-	array: any[],
-	getValue?: (value: any, index?: number, array?: any[]) => any
+export declare function getByTest<T>(
+	test: (value: T, index?: number, array?: T[]) => boolean,
+	array: T[],
+	getValue?: (value: T, index?: number, array?: T[]) => any
 ): any[];
